@@ -7,8 +7,7 @@
         </template>
 
         <div class="mb-4 text-sm text-gray-600">
-            This is a secure area of the application. Please confirm your password before continuing.
-        </div>
+            Bu, uygulamanın güvenli bir alanıdır. Lütfen devam etmeden önce şifrenizi onaylayın.        </div>
 
         <jet-validation-errors class="mb-4" />
 
@@ -20,7 +19,7 @@
 
             <div class="flex justify-end mt-4">
                 <jet-button class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                    Confirm
+                    Onayla
                 </jet-button>
             </div>
         </form>
