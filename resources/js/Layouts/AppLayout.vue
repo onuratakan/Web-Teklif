@@ -110,9 +110,10 @@
                                             Profil
                                         </jet-dropdown-link>
 
-                                        <jet-dropdown-link :href="route('api-tokens.index')" v-if="$page.props.jetstream.hasApiFeatures">
-                                            API Tokens
+                                        <jet-dropdown-link :href="route('activation_codes.index')">
+                                            Aktivasyon Kodları
                                         </jet-dropdown-link>
+
 
                                         <div class="border-t border-gray-100"></div>
 
