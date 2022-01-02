@@ -18,7 +18,10 @@
                 <jet-label for="email" value="Email" />
                 <jet-input id="email" type="email" class="mt-1 block w-full" v-model="form.email" required />
             </div>
-
+            <div class="mt-4">
+                <jet-label for="code" value="Aktivasyon Kodu" />
+                <jet-input id="code" type="text" class="mt-1 block w-full" v-model="form.code" required />
+            </div>
             <div class="mt-4">
                 <jet-label for="password" value="Parola" />
                 <jet-input id="password" type="password" class="mt-1 block w-full" v-model="form.password" required autocomplete="new-password" />
@@ -84,6 +87,7 @@
                     name: '',
                     email: '',
                     password: '',
+                    code: '',
                     password_confirmation: '',
                     terms: false,
                 })

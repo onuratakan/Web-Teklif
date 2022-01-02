@@ -127,9 +127,16 @@ return [
     'uploaded'             => ':attribute yüklemesi başarısız.',
     'url'                  => ':attribute biçimi geçersiz.',
     'uuid'                 => ':attribute mutlaka geçerli bir UUID olmalıdır.',
-    'custom'               => [
-        'niteleyici-adi' => [
-            'kural-adi' => 'Özel doğrulama mesajı',
-        ],
+    'custom' => [
+
+    ],
+
+
+
+    'attributes' => [
+        'terms' => "Şartlar ve Koşullar",
+        'code' => 'Aktivasyon Kodu',
+        'email' => 'E-posta',
+        'password' => 'Parola',
     ],
 ];
