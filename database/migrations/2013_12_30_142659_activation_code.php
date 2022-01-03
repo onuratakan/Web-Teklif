@@ -17,6 +17,7 @@ class ActivationCode extends Migration
             $table->id();
             $table->string('code')->unique();
             $table->string('email')->unique();
+            $table->enum('status', ['active', 'passive'])->default('passive');
             $table->timestamps();
         });
     }

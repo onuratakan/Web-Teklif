@@ -24,7 +24,7 @@ Route::get('/', function () {
     ]);
 });
 
-Route::resource('activation_codes', ActivationCodesController::class);
+Route::resource('activation_codes', ActivationCodesController::class)->middleware(['auth:sanctum','verified']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');

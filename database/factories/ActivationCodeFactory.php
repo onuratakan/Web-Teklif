@@ -17,6 +17,7 @@ class ActivationCodeFactory extends Factory
         return [
             'code' => 'EbEMGKWsBBwi9CicUtKnzn6Vu1E577cZ',
             'email' => 'can@can.com',
+            'status' => 'active',
 
         ];
     }

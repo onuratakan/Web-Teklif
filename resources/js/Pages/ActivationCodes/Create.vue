@@ -2,21 +2,13 @@
     <app-layout title="Aktivasyon Kodları">
         <template #header>
             <div class="flex justify-between">
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Aktivasyon Kodları
-            </h2>
+                <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                    Create Activation Code
+                </h2>
 
-
-
-
-                <a :href="route('activation_codes.create')">
-                    <button type="submit" class="p-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-800 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
-                        Oluştur
-                    </button>
-                </a>
-
-
-
+                <button type="submit" class="p-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-800 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                    Oluştur
+                </button>
             </div>
         </template>
 
@@ -78,7 +70,7 @@
                     </div>
                 </div>
 
-                        </div>
+            </div>
         </div>
 
 
