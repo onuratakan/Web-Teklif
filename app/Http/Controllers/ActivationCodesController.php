@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\DB;
 
 class ActivationCodesController extends Controller
 {
@@ -14,7 +15,12 @@ class ActivationCodesController extends Controller
      */
     public function index()
     {
-      return Inertia::render('ActivationCodes/Index');
+        $activation_codes = DB::table('activation_codes')
+            ->get();
+
+     return Inertia::render('ActivationCodes/Index', [
+            'activation_codes' => $activation_codes
+        ]);
     }
 
     /**
